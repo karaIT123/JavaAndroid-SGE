@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/eprenom"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context=".Edition">
+
+    <LinearLayout
+        android:layout_width="265dp"
+        android:layout_height="600dp"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/ePrenom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Prenom"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/eNom"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Nom"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/eEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Email"
+            android:inputType="textPersonName"
+            android:visibility="gone" />
+
+        <EditText
+            android:id="@+id/eMp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Mot de passe"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/eSexe"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Sexe"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/eAge"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Date de naissance"
+            android:inputType="textPersonName" />
+
+        <EditText
+            android:id="@+id/ePhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Telephone"
+            android:inputType="textPersonName" />
+
+        <Button
+            android:id="@+id/btnEdition"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="editer"
+            android:text="Modifier" />
+
+        <Button
+            android:id="@+id/btnRet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:onClick="ret"
+            android:text="Retour" />
+    </LinearLayout>
+
+</RelativeLayout>
