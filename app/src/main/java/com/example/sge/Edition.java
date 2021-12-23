@@ -74,8 +74,9 @@ public class Edition extends AppCompatActivity implements Serializable {
         boolean checkInsert = dbManager.updateEtudiant(id,txtnom,txtprenom,txtemail,txtMp,txtTelephone,txtage,txtsexe);
         if(checkInsert){
             Toast.makeText(getApplicationContext(),"Edition effectuer", Toast.LENGTH_SHORT).show();
-            Intent  i = new Intent(getApplicationContext(),MainActivity.class);
-            startActivity(i);
+            //Intent  i = new Intent(getApplicationContext(),MainActivity.class);
+            //startActivity(i);
+            finish();
         }
         else
             Toast.makeText(getApplicationContext(),"Edition echoué", Toast.LENGTH_SHORT).show();

@@ -9,7 +9,7 @@ import java.sql.SQLDataException;
 
 public class DatabaseManager {
     private DatabaseHelper dbHelper;
-    private Context context;
+    private final Context context;
     private SQLiteDatabase database;
 
     public DatabaseManager(Context ctx){
